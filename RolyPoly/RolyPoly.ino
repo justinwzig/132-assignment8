@@ -8,14 +8,6 @@
 
 *********************************/
 
-/*
-   TODO
-
-   Randomness????????
-*/
-
-
-
 #include "Arduino.h"
 
 // CLASSES //
@@ -157,7 +149,10 @@ void loop() {
 
     /// PREDATOR LOGIC ///
     if (predatorCanMove) {
-      //Serial.println("Pre");
+      if(Serial.available()>0){
+        int direction = (int)Serial.read();
+        predator.move(direction, predatorPos);
+      }
     }
 
     /// KILL LOGIC ///
