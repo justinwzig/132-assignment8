@@ -51,7 +51,7 @@ int predScore = 0;
 boolean predWon = false;
 
 // DISPLAY //
-const unsigned long frameLength = 10;
+const unsigned long frameLength = 5;
 boolean displayData[5][7] = {{0, 0, 0, 0, 0, 0, 0},
   {0, 0, 0, 0, 0, 0, 0},
   {0, 0, 0, 0, 0, 0, 0},
